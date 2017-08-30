@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include "Motor.h"
+#include "Servo.h"
 
 //Motor::Motor(int in1, int in2, int en) {
 //	_in1 = in1;
