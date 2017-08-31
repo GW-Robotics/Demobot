@@ -34,8 +34,8 @@ void Tank_Drive(double move, double rotate) {
     }
   }
 
- leftMotor.write(constrain(leftSpeed, -1.0, 1.0));
- rightMotor.write(-constrain(rightSpeed, -1.0, 1.0));
+ leftMotor.write(90 + (constrain(leftSpeed, -1.0, 1.0)*90));
+ rightMotor.write(90 - (constrain(rightSpeed, -1.0, 1.0)*90));
 
 }
 
