@@ -4,7 +4,7 @@
 #define LEFTMOTOR_PIN 8
 #define RIGHTMOTOR_PIN 9
 
-Ultrasonic frontUltrasonic(3, 3, true);
+Ultrasonic frontUltrasonic(3, 2, true);
 
 Servo leftMotor;
 Servo rightMotor;
@@ -42,22 +42,20 @@ void Tank_Drive(double move, double rotate) {
 
 void setup() {
   // put your setup code here, to run once:
-leftMotor.attach(LEFTMOTOR_PIN);
-rightMotor.attach(RIGHTMOTOR_PIN);
+  leftMotor.attach(LEFTMOTOR_PIN);
+  rightMotor.attach(RIGHTMOTOR_PIN);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 if (frontUltrasonic.getDistance() > 3) {
-        Tank_Drive(0.3, 0.0);
+        Tank_Drive(1 ,0.0);
         delay(200);
-        Tank_Drive(0.0, 0.0);
-        delay(400);
+
       }
 if (frontUltrasonic.getDistance() < 3){
-        Tank_Drive(0.3, 0.3);
+        Tank_Drive(-1, 0);
         delay(200);
-        Tank_Drive(0.0, 0.0);
-        delay(400);
+
       }
 }
