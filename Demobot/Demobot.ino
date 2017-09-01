@@ -1,10 +1,10 @@
 #include "Servo.h"
 #include "Ultrasonic.h"
 
-#define LEFTMOTOR_PIN 15
-#define RIGHTMOTOR_PIN 16
+#define LEFTMOTOR_PIN 8
+#define RIGHTMOTOR_PIN 9
 
-Ultrasonic frontUltrasonic(28, 29, true);
+Ultrasonic frontUltrasonic(3, 3, true);
 
 Servo leftMotor;
 Servo rightMotor;
