@@ -9,7 +9,8 @@ Ultrasonic frontUltrasonic(3, 2, true);
 Servo leftMotor;
 Servo rightMotor;
 
-void Tank_Drive(double move, double rotate) {
+void 
+Tank_Drive(double move, double rotate) {
   double leftSpeed, rightSpeed;
 
  
@@ -40,13 +41,15 @@ void Tank_Drive(double move, double rotate) {
 }
 
 
-void setup() {
+void
+setup() {
   // put your setup code here, to run once:
   leftMotor.attach(LEFTMOTOR_PIN);
   rightMotor.attach(RIGHTMOTOR_PIN);
 }
 
-void loop() {
+void 
+loop() {
   // put your main code here, to run repeatedly:
 if (frontUltrasonic.getDistance() > 3) {
         Tank_Drive(1 ,0.0);
