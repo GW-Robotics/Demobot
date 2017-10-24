@@ -1,5 +1,5 @@
 # Demobot
-Demonstration robot for recruiting events and new member teaching.
+Demonstration robot for recruiting events and new member teaching. It costs approximately $50 in parts.
 
 # Directories
 - CAD
