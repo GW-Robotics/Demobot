@@ -1,4 +1,4 @@
-# Demobot
+# Generic-Robot-Platform
 Demonstration robot for recruiting events and new member teaching.
 
 # Directories
