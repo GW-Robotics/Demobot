@@ -1,7 +1,6 @@
 // Libraries
 #include <RobotDrive.h>
 #include <TB6612FNG.h>
-#include <Ultrasonic.h>
 
 // Pin Definitions
 #define LEFT_MOTOR_A       2
