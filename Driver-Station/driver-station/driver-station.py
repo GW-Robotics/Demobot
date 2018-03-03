@@ -25,17 +25,17 @@ while True:
     
     button_values = "B0 {} B1 {} B2 {} B3 {} B4 {} B5 {} B6 {} B7 {} B8 {} B9 {} B10 {} B11 {} B12{} B13{}\n".format(_joystick.get_button(0), _joystick.get_button(1), _joystick.get_button(2), _joystick.get_button(3), _joystick.get_button(4), _joystick.get_button(5), _joystick.get_button(6), _joystick.get_button(7), _joystick.get_button(8), _joystick.get_button(9), _joystick.get_button(10), _joystick.get_button(11), _joystick.get_button(12), _joystick.get_button(13))
 
-    # if not last_joystick_values == joystick_values:
-        # ser.write(joystick_values)
-        # last_joystick_values = joystick_values
-        # print joystick_values
+    if not last_joystick_values == joystick_values:
+        ser.write(joystick_values)
+        last_joystick_values = joystick_values
+        print joystick_values
     
-    # if not last_button_values == button_values:
-        # ser.write(button_values)
-        # last_button_values = button_values
-        # print button_values
+    if not last_button_values == button_values:
+        ser.write(button_values)
+        last_button_values = button_values
+        print button_values
         
-    ser.write(joystick_values)
-    ser.write(button_values)
+    # ser.write(joystick_values)
+    # ser.write(button_values)
 
     sleep(0.2)
